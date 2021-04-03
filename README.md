@@ -4,6 +4,8 @@ Licensed under the MIT License. See file LICENSE.
 
 Collection of Java JAX-RS examples. Examples include code written in Java.
 
+[![CodeQL](https://github.com/mneiferbag/java-jaxrs/actions/workflows/codeql-analysis.yml/badge.svg?branch=main)](https://github.com/mneiferbag/java-jaxrs/actions/workflows/codeql-analysis.yml)
+
 ## Links
 
 * General
