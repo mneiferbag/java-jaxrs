@@ -15,5 +15,6 @@ Collection of Java JAX-RS examples. Examples include code written in Java.
     * [REST Assured](http://rest-assured.io/) - Testing and validating REST services in Java
     * [Swagger Codegen](https://github.com/swagger-api/swagger-codegen)
     * [Swagger Editor](http://editor.swagger.io/)
+    * [Swagger Validator](https://validator.swagger.io/)
 * Apache
     * [Apache CXF](https://cxf.apache.org/) (implements JAX-RS and more)
