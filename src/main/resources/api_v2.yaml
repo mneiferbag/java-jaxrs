@@ -1,0 +1,123 @@
+swagger: "2.0"
+info:
+  title: "Swagger Petstore"
+  version: "1.0.0"
+host: "localhost:8080"
+basePath: "/v1"
+schemes:
+- "http"
+paths:
+  /verb:
+    post:
+      summary: "Add a new Verb"
+      operationId: "addVerb"
+      consumes:
+      - "application/json"
+      produces:
+      - "application/json"
+      parameters:
+      - in: "body"
+        name: "body"
+        description: "Verb object that needs to be added"
+        required: true
+        schema:
+          $ref: "#/definitions/Verb"
+      responses:
+        "200":
+          description: "Successful operation"
+        "405":
+          description: "Invalid input"
+    get:
+      summary: "Get verbs"
+      operationId: "getVerbs"
+      produces:
+      - "application/json"
+      responses:
+        "200":
+          description: "Successful operation"
+          schema:
+            type: "array"
+            items:
+              $ref: "#/definitions/Verb"
+  /verb/{name}:
+    get:
+      summary: "Get verb by name"
+      operationId: "getVerbByName"
+      produces:
+      - "application/json"
+      parameters:
+      - name: "name"
+        in: "path"
+        description: "Name of the verb that will be returned"
+        required: true
+        type: "string"
+      responses:
+        "200":
+          description: "Successful operation"
+          schema:
+            $ref: "#/definitions/Verb"
+        400:
+          description: "Invalid parameter value"
+    put:
+      summary: "Update verb by name"
+      operationId: "updateVerb"
+      consumes:
+      - "application/json"
+      produces:
+      - "application/json"
+      parameters:
+      - name: "name"
+        in: "path"
+        description: "Name of the verb that needs to be updated"
+        required: true
+        schema:
+          type: "string"
+      - name: "body"
+        in: "body"
+        description: "Verb object that needs to be updated"
+        required: true
+        schema:
+          $ref: "#/definitions/Verb"
+      responses:
+        "200":
+          description: "Successful operation"
+        "400":
+          description: "Invalid parameter value"
+        "404":
+          description: "Verb not found"
+    delete:
+      summary: "Delete verb by name"
+      operationId: "deleteVerb"
+      produces:
+      - "application/json"
+      parameters:
+      - name: "name"
+        in: "path"
+        description: "Name of the verb that needs to be deleted"
+        required: true
+        type: "string"
+      responses:
+        "200":
+          description: "Successful operation"
+        "400":
+          description: "Invalid parameter value"
+        "404":
+          description: "Verb not found"
+definitions:
+  Verb:
+    type: "object"
+    properties:
+      name:
+        type: "string"
+      first:
+        type: "string"
+      second:
+        type: "string"
+      third:
+        type: "string"
+      firsts:
+        type: "string"
+      seconds:
+        type: "string"
+      thirds:
+        type: "string"
