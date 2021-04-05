@@ -70,8 +70,7 @@ paths:
         in: "path"
         description: "Name of the verb that needs to be updated"
         required: true
-        schema:
-          type: "string"
+        type: "string"
       - name: "body"
         in: "body"
         description: "Verb object that needs to be updated"
