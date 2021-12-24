@@ -7,4 +7,4 @@
 /**
  * Package with Java JAX-RS code examples.
  */
-package de.mneifercons.examples.jaxrs;
+package eu.mneifercons.examples.jaxrs;

@@ -22,7 +22,7 @@
  * limitations under the License.
  */
 
-package de.mneifercons.examples.jaxrs;
+package eu.mneifercons.examples.jaxrs;
 
 import java.util.ArrayList;
 import java.util.List;
@@ -35,8 +35,8 @@ import org.apache.cxf.jaxrs.client.WebClient;
 import org.junit.Before;
 import org.junit.Test;
 
-import de.mneifercons.examples.jaxrs.api.DefaultApi;
-import de.mneifercons.examples.jaxrs.model.Verb;
+import eu.mneifercons.examples.jaxrs.api.DefaultApi;
+import eu.mneifercons.examples.jaxrs.model.Verb;
 
 
 
