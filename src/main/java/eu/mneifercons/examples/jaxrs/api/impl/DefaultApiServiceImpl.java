@@ -1,9 +1,8 @@
 package eu.mneifercons.examples.jaxrs.api.impl;
 
-import java.util.List;
-
-import eu.mneifercons.examples.jaxrs.api.DefaultApi;
 import eu.mneifercons.examples.jaxrs.model.Verb;
+
+import java.util.List;
 
 
 /**
