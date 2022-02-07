@@ -6,6 +6,21 @@ Collection of Java JAX-RS examples. Examples include code written in Java.
 
 [![CodeQL](https://github.com/mneiferbag/java-jaxrs/actions/workflows/codeql-analysis.yml/badge.svg?branch=main)](https://github.com/mneiferbag/java-jaxrs/actions/workflows/codeql-analysis.yml)
 
+## Apache CXF
+
+Plugin swagger-codegen-maven-plugin:3.0.32 does not support CXF.
+
+    Unknown library: jaxrs-cxf
+    Available libraries:
+      jersey1
+      feign
+      jersey2
+      okhttp-gson
+      retrofit
+      retrofit2
+      resttemplate
+      resteasy
+
 ## Links
 
 * General
